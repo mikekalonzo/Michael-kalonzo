@@ -13,7 +13,7 @@ img.profile-pic {
 }
 
 header {
-    background-color: black;
+    background-color: lightblue;
     color: black;
     text-align: center;
     padding: 20px 0;
@@ -79,8 +79,6 @@ nav ul li a {
   background-color: azure;
   border-radius: 12px;
     padding: 8px 16px;
-    
-  
 }
 nav ul {
     list-style: none;
@@ -95,8 +93,20 @@ nav ul li {
    margin-bottom: 20px;
 }
 .hero p {
-   font-size: 1.5em;
+   font-size: 2.5em;
 
     color: white;
   margin-bottom: 30px;
+}
+.hero {
+    background-color: lightpink;
+    background-size: cover;
+    padding: 100px 20px;
+    color: white;
+    text-align: center;
+    top: 0;
+    border-radius: 0;
+ margin-bottom: 60px;
+ transform: scaleX();
+  
 }
