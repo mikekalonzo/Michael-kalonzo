@@ -104,10 +104,7 @@ nav a:hover {
     padding: 80px 10%;
     max-width: 1200px;
     margin: 0 auto;  
-    background-image: url('beautiful-sky (1).jpg'); /* Replace with your background image */
-    background-size: cover;
-   background-repeat: repeat;
-    background-position: inherit;
+    background-color: rgb(40, 49, 53);
 
 }
 .about-image img {
