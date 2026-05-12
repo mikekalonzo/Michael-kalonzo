@@ -53,12 +53,16 @@ nav a:hover {
 .hero {
     padding: 100px 20px;
     text-align: center;
-    background-image: url('city-blue-sky.jpg'); /* Replace with your background image */
+    background-image: url('Hacker.jpg'); /* Replace with your background image */
     background-size: cover;
     background-position: center;
 }
 .hero h1 {
     font-size: 3rem;
+}
+.hero p {
+    font-size: 1.5rem;
+    margin-top: 20px;
 }
 
 .btn {
