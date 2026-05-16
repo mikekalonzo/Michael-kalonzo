@@ -130,13 +130,27 @@ nav a:hover {
 }
 .logo {
    background-color: inherit;
-   color: #a855f7;
+   color: gray;
   margin-left: 40px;
   padding: 9px;
   display: flex;
   font-weight: bold;
   font-size: 20px;
-  
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+.logo:hover {
+    color: #7c3aed;
+}
+@media (max-width:768px) {
+      .logo {
+        margin-left: 0;
+        font-size: 20px;
+        letter-spacing: 3px;
+        justify-content: center;
+    }
 }
 .about-container {
     display: flex;
