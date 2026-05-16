@@ -5,6 +5,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
 
 nav {
     background-color: white;
@@ -15,6 +19,24 @@ nav {
     top: 0;
     z-index: 1000;
 }
+@media (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+    }
+    .nav-links {
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+       gap: 10px;
+       width: 100%;
+    }
+    .nav-links a {
+        font-size: 0.85rem;
+    }
+}
+
+
+
 body {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
@@ -60,7 +82,7 @@ nav a {
     color: gray;
     text-decoration: none;
     font-size: 18px;
-    transition: color 0.3s ease;
+    transition: color 0.2s ease;
     font-weight: bold;
    
 }
