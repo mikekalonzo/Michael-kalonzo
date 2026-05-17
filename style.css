@@ -64,12 +64,13 @@ span {
 /* Navigation Bar */
 nav {
     background-color: white;
-    padding: 20px 5%;
+    padding: 10px 5% 8px;
     display: flex;
     justify-content: space-between;
     position: sticky;
     top: 0;
       z-index: 1000; /* Ensure it stays above other content */
+      border-radius: 10px;
 }
 nav ul {
     list-style: none;
@@ -83,7 +84,7 @@ nav ul li {
     margin-left: 20px;
 }
 nav a {
-    color: gray;
+    color: black;
     text-decoration: none;
     font-size: 18px;
     transition: color 0.2s ease;
@@ -117,7 +118,7 @@ nav a:hover {
 }
 /* Hero Section */
 .hero {
-    padding: 150px 20px 40px;
+    padding: 150px 40px 150px;
     text-align: center;
     background-image: url('Hacker.jpg'); /* Replace with your background image */
     background-size: cover;
@@ -127,10 +128,16 @@ nav a:hover {
 .hero h1 {
     font-size: 3rem;
 }
-.hero p {
+
+    .hero p {
     font-size: 1.5rem;
     margin-top: 20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    font-style: oblique;
 }
+
 
 .btn {
     display: inline-block;
@@ -138,7 +145,7 @@ nav a:hover {
     color: white;
     text-decoration: none;
     border-radius: 5px;
-    margin: 10px;
+    margin-top: 90px;
 }
 .primary {
      background: #a855f7; 
@@ -167,6 +174,7 @@ nav a:hover {
     .hero p {
         font-size: 1rem;
         margin-top: 15px;
+        max-width: 100%;
     }
 
     img.profile-pic {
@@ -189,7 +197,7 @@ nav a:hover {
 }
 .logo {
    background-color: inherit;
-   color: gray;
+   color: black;
   margin-left: 40px;
   padding: 9px;
   display: flex;
@@ -200,7 +208,7 @@ nav a:hover {
   transition: color 0.3s ease;
   cursor: pointer;
   position: relative;
-
+font-style: oblique;
 }
 .logo:hover {
      color: #a855f7;
