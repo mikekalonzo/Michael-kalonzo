@@ -9,15 +9,7 @@ html {
     scroll-behavior: smooth;
 }
 
-nav {
-    background-color: white;
-    padding: 10px 5%; /* reduced padding */
-    display: flex;
-    justify-content: space-between;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
+
 body {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
@@ -48,10 +40,6 @@ img.profile-pic:hover {
     border-right: 3px solid #a855f7;
     display: inline-block;
     animation: blink 0.9s step-end infinite;
-}
-
-@keyframes blink {
-    50% { border-color: transparent }
 }
 
 @keyframes blink {
@@ -118,34 +106,45 @@ nav a:hover {
 }
 /* Hero Section */
 .hero {
-    padding: 150px 40px 150px;
+    padding: 130px 40px 150px;
     text-align: center;
     background-image: url('Hacker.jpg'); /* Replace with your background image */
     background-size: cover;
     background-position: center;
-    min-height: 500px; /* Ensure it takes up enough vertical space */
+    min-height: 400px; /* Ensure it takes up enough vertical space */
+    align-items: center;
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     
 }
 .hero h1 {
     font-size: 3rem;
 }
 
     .hero p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-top: 20px;
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
-    font-style: oblique;
+    color: #cbd5e1
 }
 
-
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 40px;
+}
 .btn {
     display: inline-block;
     padding: 10px 25px;
     color: white;
     text-decoration: none;
     border-radius: 5px;
-    margin-top: 90px;
+    margin-top: 0;
 }
 .primary {
      background: #a855f7; 
@@ -208,7 +207,7 @@ nav a:hover {
   transition: color 0.3s ease;
   cursor: pointer;
   position: relative;
-font-style: oblique;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .logo:hover {
      color: #a855f7;
@@ -241,10 +240,11 @@ font-style: oblique;
     display: flex;
     align-items: center; /* Center items vertically */
     gap: 50px; /* Space between image and text */
-    padding: 80px 10%;
+    padding: 120px 10%;
     width: 100%;
     box-sizing: border-box;
-background-color: rgb(40, 49, 53); /* Slightly lighter background for contrast */
+    background-color: rgb(25, 32, 35);
+  background-image: radial-gradient(ellipse at top, rgba(168, 85, 247, 0.15), transparent 70%);
 }
 .about-image img {
     max-width: 450px; /* prevent image from being too large */
@@ -448,4 +448,112 @@ footer p:hover {
     #contact {
         padding: 60px 5%;
     }
+}
+/* Skill Section */
+#skills {
+    padding: 80px 10%;
+    text-align: center;
+        background-color: rgb(25, 32, 35);
+    background-image: radial-gradient(ellipse at top, rgba(168, 85, 247, 0.15), transparent 70%);
+}
+#skills h2 {
+    font-size: 2.5rem;
+    color: #a855f7;
+    margin-bottom: 15px;
+}
+#skills p {
+    font-size: 1.1rem;
+    color: #cbd5e1;
+    margin-bottom: 50px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+.skill-card {
+    background-color: rgb(30, 38, 42);
+    border: 1px solid rgba(168, 85, 247, 0.2);
+    border-radius: 15px;
+    padding: 25px 20px;
+    transition: all 0.3s ease;
+    text-align: left;
+    text-align: left;
+}
+.skill-card:hover {
+    border-color: #a855f7;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(168, 85, 247, 0.2);
+}
+.skill-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+.skill-name {
+    font-size: 1.1rem;
+    color: #a855f7;
+    font-weight: bold;
+letter-spacing: 1px;
+text-transform: uppercase;
+}
+.skill-percent {
+    font-size: 0.95rem;
+    color: #a855f7;
+    font-weight: bold;
+}
+.skill-bar {
+    width: 100%;
+    height: 10px;
+    background-color: rgba(168, 85, 247, 0.1);
+    border-radius: 30px;
+    overflow: hidden;
+}
+.skill-fill {
+    height: 100%;
+    border-radius: 30px;
+    background: linear-gradient(90deg, #7c3aed, #a855f7);
+}
+/* Mobile */
+@media (max-width: 768px) {
+    #skills {
+        padding: 60px 5%;
+    }
+
+    #skills h2 {
+        font-size: 1.8rem;
+    }
+
+    #skills p {
+        font-size: 0.95rem;
+        margin-bottom: 30px;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+    .skill-card {
+        padding: 20px 15px;
+    }
+}
+.scroll-arrow {
+    margin-top: 64px;
+    display: flex;
+    justify-content: center;
+}
+
+.scroll-arrow a {
+    display: inline-block;
+    animation: bounce 0.9s infinite;
+    text-decoration: none;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(10px); }
 }

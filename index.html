@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <nav>
-        <div class="logo">KALONZO</div>
+  <nav>
+        <div class="logo">KALONZO <span>M</span></div>
       <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
@@ -16,19 +16,27 @@
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
         </ul>
-    </nav>
+    </nav>>
      <main>
         <section id="home">
 <header class="hero"> 
     <img src="mike.profile.jpg" alt="Michael Kalonzo" class="profile-pic"> 
 <h1>Hi, I'm <span class="typing">Michael Kalonzo</span></h1>
-      <p>Full Stack Developer & Creative Problem Solver</p>
-      <p>I build beautiful, responsive web applications that solve real-world problems. Passionate about clean code, user experience, and continuous learning.</p>
+      <p><strong>Full Stack Developer & Creative Problem Solver</strong></p>
+      <p><em>I build beautiful, responsive web applications that solve real-world problems. Passionate about clean code, user experience, and continuous learning.</em></p>
       <div class="button">
          <a href="#projects" class="btn primary">View My Work</a>
             <a href="#contact" class="btn secondary">Get In Touch</a>
       </div>
 </header>
+<div class="scroll-arrow">
+    <a href="#about">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="48" viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="5" x2="12" y2="19"/>
+            <polyline points="19 12 12 19 5 12"/>
+        </svg>
+    </a>
+</div>
         </section>
 <section id="about">
 <div class="about-container">
@@ -47,12 +55,65 @@
     </div>
 </div>     
 </section>
-<section id="projects">
-    <h2 style="text-align: center;">Featured Projects</h2>
-    <div class="projects-container">
-        <!-- Project cards will go here -->
-    </div>
 
+<section id="skills">
+    <h2>Skills & Expertise</h2>
+    <p>Here are some of the technologies and tools I'm proficient in:</p>
+    <div class="skills-container">
+ <div class="skill-card">
+     <div class="skill-header">
+    <span class="skill-name">HTML</span>
+    <span class="skill-percent">95%</span>
+    </div>
+    <div class="skill-bar">
+        <div class="skill-fill" style="width: 95%;"></div>
+    </div>
+ </div>
+ <div class="skill-card">
+     <div class="skill-header">
+    <span class="skill-name">CSS</span>
+    <span class="skill-percent">80%</span>
+    </div>
+    <div class="skill-bar">
+        <div class="skill-fill" style="width: 80%;"></div>
+ </div>
+ </div>
+ <div class="skill-card">
+     <div class="skill-header">
+    <span class="skill-name">JavaScript</span>
+    <span class="skill-percent">2%</span>
+    </div>
+    <div class="skill-bar">
+        <div class="skill-fill" style="width: 2%;"></div>
+    </div>
+ </div>
+ <div class="skill-card">
+     <div class="skill-header">
+<span class="skill-name">Git</span>
+    <span class="skill-percent">89%</span>
+         </div>
+         <div class="skill-bar">
+        <div class="skill-fill" style="width: 89%;"></div>
+    </div>
+ </div>
+    <div class="skill-card">
+         <div class="skill-header">
+    <span class="skill-name">VS Code</span>
+    <span class="skill-percent">87%</span>
+    </div>
+    <div class="skill-bar">
+        <div class="skill-fill" style="width: 87%;"></div>
+    </div>
+    </div>
+    <div class="skill-card">
+         <div class="skill-header">
+    <span class="skill-name">FULL STACK DEV</span>
+    <span class="skill-percent">49%</span>
+         </div>
+    <div class="skill-bar">
+        <div class="skill-fill" style="width: 49%;"></div>
+    </div>
+    </div>
 </section>
 <section id="contact">
     <h2>Let's Connect</h2>
@@ -106,6 +167,7 @@
           </div>
   <button class="email-btn">Send Me an Email</button>
     </section>
+    
     </main>
     <footer>
         <div class="footer-content">
