@@ -203,12 +203,12 @@ nav a:hover {
   margin-left: 40px;
   padding: 9px;
   display: flex;
-  font-weight: bold;
+  font-weight: 800;
   font-size: 20px;
   letter-spacing: 4px;
   text-transform: uppercase;
   transition: color 0.3s ease;
-  cursor: pointer;
+  cursor: grab;
   position: relative;
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -269,6 +269,25 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: #cbd5e1; /* Lighter text color for readability */
     margin-bottom: 15px;
+}
+.cert-nav-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 35px;
+    background-color: #a855f7;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.cert-nav-btn:hover {
+    background-color: transparent;
+    border: 2px solid #a855f7;
+    color: #a855f7;
 }
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
@@ -554,6 +573,7 @@ text-transform: uppercase;
     display: inline-block;
     animation: bounce 0.9s infinite;
     text-decoration: none;
+    cursor: wait;
 }
 
 @keyframes bounce {

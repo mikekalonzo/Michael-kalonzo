@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certifications - Michael Kalonzo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --purple: #a855f7;
+            --purple-dark: #7c3aed;
+            --purple-glow: rgba(168, 85, 247, 0.2);
+            --bg-dark: rgb(25, 32, 35);
+            --bg-card: rgb(30, 38, 42);
+            --bg-card2: rgb(40, 49, 53);
+            --text-light: #cbd5e1;
+            --text-white: #ffffff;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-white);
+            font-family: 'Syne', sans-serif;
+            min-height: 100vh;
+            background-image:
+                radial-gradient(ellipse at top left, rgba(168, 85, 247, 0.12), transparent 50%),
+                radial-gradient(ellipse at bottom right, rgba(124, 58, 237, 0.08), transparent 50%);
+        }
+        /* NAV */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 8%;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(168, 85, 247, 0.15);
+            position: sticky;
+            backdrop-filter: blur(10px);
+             background-color: rgba(25, 32, 35, 0.95);
+        }
+            .logo {
+            color: var(--purple);
+            font-size: 1.4rem;
+            font-weight: 800;
+            letter-spacing: 2px;
+            text-decoration: none;
+        }
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--purple);
+            font-size: 0.9rem;
+            text-decoration: none;
+            padding: 6px 24px;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            border: 1px solid var(--purple);
+            font-weight: 600;
+            cursor: wait;
+
+        }
+        .back-btn:hover {
+            background-color: var(--purple);
+            color: white;
+        }
+        /* HERO */
+        .cert-hero h1 {
+            line-height: 1.1;
+            padding: 80px 20px 40px;
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 800;
+            margin-bottom: 15px;
+        }
+        .cert-hero h1 span {
+            color: var(--purple);
+        }
+        .cert-hero p {
+            color: var(--text-light);
+            font-size: 1.1rem;
+            max-width: 550px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+        /* STATS */
+        .stats-row {
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            padding: 30px 8%;
+            flex-wrap: wrap;
+        }
+        .stat-item {
+            text-align: center;
+        }
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--purple);
+        }
+        .stat-label {
+            color: var(--text-light);
+            font-size: 0.85rem;
+            margin-top: 5px;
+        }
+
+        .divider {
+            width: 60px;
+            height: 3px;
+          background: linear-gradient(90deg, var(--purple-dark), var(--purple));
+            margin: 0 auto 60px;
+            border-radius: 2px;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <!-- NAV -->
+    <nav>
+        <a href="index.html" class="logo">KALONZO</a>
+        <a href="index.html" class="back-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                <polyline points="9 22 9 12 15 12 15 22"/>
+            </svg>
+            Back to Portfolio
+        </a>
+    </nav>
+
+    <!-- HERO -->
+    <div class="cert-hero">
+        <div class="badge">Verified Achievements</div>
+        <h1>My <span>Certifications</span></h1>
+        Here are some of the certifications and courses I've earned to validate my skills and knowledge in various areas of technology .</p>
+    </div>
+    </div>
+
+    <!-- STATS -->
+    <div class="stats-row">
+        <div class="stat-item">
+            <div class="stat-number">2+</div>
+            <div class="stat-label">Certificates Earned</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">300+</div>
+            <div class="stat-label">Hours of Learning</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">2</div>
+            <div class="stat-label">Platforms</div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- CERT CARDS -->
+    <section class="cert-section">
+        <div class="cert-container">
+
+            <!-- Card 1 -->
+            <div class="cert-card">
+                <div class="cert-top">
+                    <div class="cert-icon-wrap">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
+                        </svg>
+                    </div>
+                    <span class="cert-year">2026</span>
+                </div>
+                <div>
+                    <div class="cert-issuer">freeCodeCamp</div>
+                    <div class="cert-title">Responsive Web Design</div>
+                </div>
+                <div class="cert-desc">Covers HTML5, CSS3, Flexbox, Grid, and building accessible responsive layouts for all screen sizes.</div>
+                <div class="cert-tags">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">Flexbox</span>
+                    <span class="tag">Grid</span>
+                </div>
+                <a href="https://freecodecamp.org/certification/mikekalonzo/responsive-web-design-v9" target="_blank" class="cert-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
+                    </svg>
+                    View Certificate
+                </a>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="cert-card">
+                <div class="cert-top">
+                    <div class="cert-icon-wrap">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                        </svg>
+                    </div>
+                    <span class="cert-year">2026</span>
+                </div>
+                <div>
+                    <div class="cert-issuer">freeCodeCamp</div>
+                    <div class="cert-title">Legacy Responsive Web Design v8</div>
+                </div>
+                <div class="cert-desc">Covers HTML5, CSS3, Flexbox, CSS Grid, 
+    accessibility and building fully responsive 
+    layouts that work across all screen sizes 
+    and devices.</div>
+                <div class="cert-tags">
+    <span class="tag">HTML</span>
+    <span class="tag">CSS</span>
+    <span class="tag">Flexbox</span>
+    <span class="tag">Grid</span>
+</div>
+                <a href="https://freecodecamp.org/certification/mikekalonzo/responsive-web-design" target="_blank" class="cert-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
+                    </svg>
+                    View Certificate
+                </a>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="cert-card">
+                <div class="cert-top">
+                    <div class="cert-icon-wrap">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>
+                        </svg>
+                    </div>
+                    <span class="cert-year">2026</span>
+                </div>
+                <div>
+                    <div class="cert-issuer">freeCodeCamp</div>
+                    <div class="cert-title">Front End Development Libraries</div>
+                </div>
+                <div class="cert-desc">Bootstrap, jQuery, Sass, React and Redux — building modern interactive front-end applications.</div>
+                <div class="cert-tags">
+                    <span class="tag">React</span>
+                    <span class="tag">Redux</span>
+                    <span class="tag">Bootstrap</span>
+                    <span class="tag">Sass</span>
+                </div>
+                <a href="YOUR_CERTIFICATE_LINK" target="_blank" class="cert-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
+                    </svg>
+                    View Certificate
+                </a>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="cert-card">
+                <div class="cert-top">
+                    <div class="cert-icon-wrap">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+                        </svg>
+                    </div>
+                    <span class="cert-year">2026</span>
+                </div>
+                <div>
+                    <div class="cert-issuer">freeCodeCamp</div>
+                    <div class="cert-title">Back End Development & APIs</div>
+                </div>
+                <div class="cert-desc">Node.js, Express, MongoDB, Mongoose — building RESTful APIs and full back-end applications.</div>
+                <div class="cert-tags">
+                    <span class="tag">Node.js</span>
+                    <span class="tag">Express</span>
+                    <span class="tag">MongoDB</span>
+                    <span class="tag">APIs</span>
+                </div>
+                <a href="YOUR_CERTIFICATE_LINK" target="_blank" class="cert-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
+                    </svg>
+                    View Certificate
+                </a>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="cert-card">
+                <div class="cert-top">
+                    <div class="cert-icon-wrap">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                    </div>
+                    <span class="cert-year">2026</span>
+                </div>
+                <div>
+                    <div class="cert-issuer">freeCodeCamp</div>
+                    <div class="cert-title">Information Security</div>
+                </div>
+                <div class="cert-desc">HelmetJS, TCP/IP, network security, penetration testing with Python — protecting web applications.</div>
+                <div class="cert-tags">
+                    <span class="tag">Security</span>
+                    <span class="tag">HelmetJS</span>
+                    <span class="tag">Python</span>
+                </div>
+                <a href="YOUR_CERTIFICATE_LINK" target="_blank" class="cert-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
+                    </svg>
+                    View Certificate
+                </a>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="cert-card">
+                <div class="cert-top">
+                    <div class="cert-icon-wrap">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/>
+                        </svg>
+                    </div>
+                    <span class="cert-year">2026</span>
+                </div>
+                <div>
+                    <div class="cert-issuer">freeCodeCamp</div>
+                    <div class="cert-title">Data Visualization</div>
+                </div>
+                <div class="cert-desc">D3.js and JSON APIs — creating charts, graphs and visual data representations for the web.</div>
+                <div class="cert-tags">
+                    <span class="tag">D3.js</span>
+                    <span class="tag">JSON</span>
+                    <span class="tag">SVG</span>
+                </div>
+                <a href="YOUR_CERTIFICATE_LINK" target="_blank" class="cert-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
+                    </svg>
+                    View Certificate
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Kalonzo Michael. All rights reserved.</p>
+        <p class="built-with">Built with HTML & CSS</p>
+    </footer>
+
+</body>
+</html>
