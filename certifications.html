@@ -73,20 +73,40 @@
             background-color: var(--purple);
             color: white;
         }
-        /* HERO */
+               /* HERO */
+        .cert-hero {
+            text-align: center;
+            padding: 70px 8% 50px;
+        }
+
+        .cert-hero .badge {
+            display: inline-block;
+            background: rgba(168, 85, 247, 0.1);
+            border: 1px solid rgba(168, 85, 247, 0.3);
+            color: var(--purple);
+            padding: 6px 18px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
         .cert-hero h1 {
-            line-height: 1.1;
-            padding: 80px 20px 40px;
             font-size: clamp(2rem, 5vw, 3.5rem);
             font-weight: 800;
             margin-bottom: 15px;
+            line-height: 1.1;
         }
+
         .cert-hero h1 span {
             color: var(--purple);
         }
+
         .cert-hero p {
-            color: var(--text-light);
             font-size: 1.1rem;
+            color: var(--text-light);
             max-width: 550px;
             margin: 0 auto;
             line-height: 1.7;
@@ -120,7 +140,163 @@
             margin: 0 auto 60px;
             border-radius: 2px;
         }
-        
+        /* CERT CONTAINERS */
+        .cert-section {
+            padding: 0 8% 80px;
+        }
+        .cert-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+        }
+        /* CERT CARD */
+          .cert-card {
+            background-color: var(--bg-card);
+            border: 1px solid rgba(168, 85, 247, 0.2);
+            border-radius: 18px;
+            padding: 30px 25px;
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+         .cert-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--purple-dark), var(--purple));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+ .cert-card:hover {
+            border-color: var(--purple);
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(168, 85, 247, 0.2);
+        }
+  .cert-card:hover::before {
+            opacity: 5;
+        }
+         /* Card top row */
+        .cert-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+          .cert-icon-wrap {
+            width: 52px;
+            height: 52px;
+            background: rgba(168, 85, 247, 0.1);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid rgba(168, 85, 247, 0.2);
+        }
+         .cert-icon-wrap svg {
+            width: 26px;
+            height: 26px;
+            color: var(--purple);
+        }
+          .cert-year {
+            font-size: 0.78rem;
+            color: var(--purple);
+            font-weight: 700;
+            background: rgba(168, 85, 247, 0.1);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-family: 'Space Mono', monospace;
+        }
+            /* Card body */
+        .cert-issuer {
+            font-size: 0.75rem;
+            color: var(--purple);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+            .cert-title {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: var(--text-white);
+            line-height: 1.4;
+            margin-top: 4px;
+        }
+            .cert-desc {
+            font-size: 0.88rem;
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+          /* Tags */
+        .cert-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+                .tag {
+            font-size: 0.75rem;
+            color: var(--text-light);
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.08);
+            padding: 3px 10px;
+            border-radius: 10px;
+        }
+         /* View button */
+        .cert-btn {
+            margin-top: auto;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 11px 20px;
+            border: 1px solid rgba(168, 85, 247, 0.4);
+            border-radius: 10px;
+            color: var(--purple);
+            text-decoration: none;
+            font-size: 0.88rem;
+            font-weight: 700;
+            transition: all 0.3s ease;
+            font-family: 'Syne', sans-serif;
+        }
+           .cert-btn svg {
+            width: 16px;
+            height: 16px;
+        }
+                .cert-btn:hover {
+            background-color: var(--purple);
+            color: white;
+            border-color: var(--purple);
+        }
+          /* FOOTER */
+        footer {
+            background-color: rgba(15, 20, 22, 0.8);
+            padding: 25px 8%;
+            text-align: center;
+            border-top: 1px solid rgba(168, 85, 247, 0.1);
+        }
+           footer p {
+            color: var(--text-light);
+            font-size: 0.88rem;
+        }
+
+        footer .built-with {
+            color: var(--purple);
+            margin-top: 5px;
+            font-size: 0.82rem;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .cert-hero { padding: 50px 5% 30px; }
+            .cert-section { padding: 0 5% 60px; }
+            .cert-container { grid-template-columns: 1fr; }
+            .stats-row { gap: 25px; }
+            nav { padding: 12px 5%; }
+        }
     </style>
 </head>
 <body>
