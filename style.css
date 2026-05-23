@@ -336,19 +336,20 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 /* Grid container */
 .contact-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+    gap: 16px;
     margin-bottom: 40px;
+    max-width: 700px;   /* keeps it centered and not too wide */
+    margin: 0 auto 40px;
 }
 
-/* Each card */
 .contact-card {
     background-color: rgb(30, 38, 42);
-    border: 1px solid rgba(168, 85, 247, 0.2);
-    border-radius: 15px;
-    padding: 30px 20px;
+    border: 1px solid rgba(168, 85, 247, 0.15);
+    border-radius: 12px;
+    padding: 20px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;  /* icon and text side by side */
     align-items: center;
     gap: 15px;
     transition: all 0.3s ease;
@@ -356,43 +357,38 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 .contact-card:hover {
     border-color: #a855f7;
-    transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(168, 85, 247, 0.2);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(168, 85, 247, 0.15);
 }
 
-/* Icon circle */
+/* Icon */
 .icon {
     background-color: rgba(168, 85, 247, 0.1);
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
+    border-radius: 10px;
+    width: 45px;
+    height: 45px;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;  /* stops icon from shrinking */
 }
 
 .icon svg {
     color: #a855f7;
-    width: 28px;
-    height: 28px;
-    transition: all 0.3s ease;
+    width: 22px;
+    height: 22px;
 }
 
-.contact-card:hover svg {
-    color: #ffffff;
-    transform: scale(1.1);
-}
-
-/* Text info */
+/* Text */
 .contact-info {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 6px;
+    gap: 3px;
+    text-align: left;
 }
 
 .contact-label {
-    font-size: 0.85rem;
+    font-size: 0.78rem;
     color: #a855f7;
     font-weight: bold;
     text-transform: uppercase;
@@ -400,7 +396,7 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .contact-info a {
-    font-size: 0.95rem;
+    font-size: 0.88rem;
     color: #cbd5e1;
     text-decoration: none;
     transition: color 0.3s ease;
@@ -409,25 +405,11 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 .contact-info a:hover {
     color: #a855f7;
 }
-
-/* Email button */
-.email-btn {
-    background-color: #a855f7;
-    color: white;
-    border: none;
-    padding: 14px 40px;
-    font-size: 1rem;
-    font-weight: bold;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    margin-top: 10px;
-}
-
-.email-btn:hover {
-    background-color: transparent;
-    border: 2px solid #a855f7;
-    color: #a855f7;
+/* Mobile - stack to 1 column */
+@media (max-width: 480px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Footer */
