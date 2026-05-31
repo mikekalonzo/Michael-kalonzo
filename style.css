@@ -155,8 +155,8 @@ nav a:hover {
 }
 
 .secondary {
-     border: 1px solid #a855f7;
-      color: #a855f7; 
+     border: 1px solid #c084fc;
+      color: #c084fc; 
     }
 .secondary:hover {
     background: black;
@@ -286,8 +286,8 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 .cert-nav-btn:hover {
     background-color: transparent;
-    border: 2px solid #a855f7;
-    color: #a855f7;
+    border: 2px solid #c084fc;
+    color: #c084fc;
 }
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
@@ -389,7 +389,7 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 .contact-label {
     font-size: 0.78rem;
-    color: #a855f7;
+    color: #c084fc;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -403,7 +403,7 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .contact-info a:hover {
-    color: #a855f7;
+    color: #c084fc;
 }
 /* Mobile - stack to 1 column */
 @media (max-width: 480px) {
@@ -462,7 +462,7 @@ footer p:hover {
 }
 #skills h2 {
     font-size: 2.5rem;
-    color: #a855f7;
+    color: #c084fc;
     margin-bottom: 15px;
 }
 #skills p {
@@ -488,7 +488,7 @@ footer p:hover {
     text-align: left;
 }
 .skill-card:hover {
-    border-color: #a855f7;
+    border-color: #c084fc;
     transform: translateY(-5px);
     box-shadow: 0 10px 30px rgba(168, 85, 247, 0.2);
 }
@@ -500,14 +500,14 @@ footer p:hover {
 }
 .skill-name {
     font-size: 1.1rem;
-    color: #a855f7;
+    color: #c084fc;
     font-weight: bold;
 letter-spacing: 1px;
 text-transform: uppercase;
 }
 .skill-percent {
     font-size: 0.95rem;
-    color: #a855f7;
+    color: #c084fc;
     font-weight: bold;
 }
 .skill-bar {
@@ -520,7 +520,7 @@ text-transform: uppercase;
 .skill-fill {
     height: 100%;
     border-radius: 30px;
-    background: linear-gradient(90deg, #7c3aed, #a855f7);
+    background: linear-gradient(90deg, #7c3aed, #c084fc);
 }
 /* Mobile */
 @media (max-width: 768px) {
