@@ -151,7 +151,7 @@ nav a:hover {
 }
 .primary {
      background: #a855f7; 
-    color: white; 
+    color: #ffffff;
 }
 
 .secondary {
@@ -276,7 +276,7 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     gap: 10px;
     padding: 14px 35px;
     background-color: #a855f7;
-    color: white;
+    color: #ffffff;
     border-radius: 25px;
     text-decoration: none;
     font-weight: bold;
