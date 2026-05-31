@@ -111,7 +111,7 @@ nav a:hover {
 .hero {
     padding: 130px 40px 150px;
     text-align: center;
-    background-image: url('Hacker.jpg'); /* Replace with your background image */
+    background-image: url('Hacker.webp'); /* Replace with your background image */
     background-size: cover;
     background-position: center;
     min-height: 400px; /* Ensure it takes up enough vertical space */
