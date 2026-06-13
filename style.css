@@ -889,20 +889,52 @@ text-transform: uppercase;
     margin-bottom: 20px;
 }
 
-/* Mobile */
+/* Mobile fixes */
 @media (max-width: 768px) {
-    .contact-wrapper {
-        flex-direction: column;
-        gap: 40px;
-    }
- /* 1. Center "Send Me a Message" heading */
+
+    /* 1. Center "Send Me a Message" heading */
     .contact-right {
         padding-left: 0;
         text-align: center;
     }
-    .contact-divider {
+
+    .contact-right h3 {
+        text-align: center;
+    }
+
+    .contact-right > p {
+        text-align: center;
+    }
+
+    /* Keep form labels left aligned */
+    .form-group {
+        text-align: left;
+    }
+
+    /* 2. Center contact cards */
+    .contact-left {
+        padding-right: 0;
         width: 100%;
+        align-items: center;
+    }
+
+    .contact-card {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    /* 3. Fix zooming issue */
+    .contact-wrapper {
+        flex-direction: column;
+        gap: 40px;
+        width: 100%;
+    }
+
+    .contact-divider {
+        width: 80%;
         height: 1px;
+        margin: 0 auto;
         background: linear-gradient(
             to right,
             transparent,
@@ -915,8 +947,41 @@ text-transform: uppercase;
         grid-template-columns: 1fr;
     }
 
-    .contact-left { padding-right: 0; }
-    .contact-right { padding-left: 0; }
+    .submit-btn {
+        align-self: center;
+    }
+}
 
-    .submit-btn { align-self: center; }
+@media (max-width: 480px) {
+    .contact-card {
+        max-width: 100%;
+    }
+
+    #contact {
+        padding: 60px 5%;
+    }
+}
+/* Back to top button */
+.back-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #a855f7;
+    color: white;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(168, 85, 247, 0.4);
+    transition: all 0.3s ease;
+    z-index: 999;
+}
+
+.back-top:hover {
+    background: #7c3aed;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(168, 85, 247, 0.5);
 }
