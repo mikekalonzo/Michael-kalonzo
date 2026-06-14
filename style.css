@@ -29,6 +29,7 @@ img.profile-pic {
     box-shadow: 0 0 20px rgba(168, 85, 247, 0.5),
                 0 0 40px rgba(168, 85, 247, 0.2);
     transition: all 0.4s ease;
+    
 }
 img.profile-pic:hover {
     transform: scale(1.05);
