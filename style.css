@@ -216,22 +216,13 @@ nav a:hover {
 }
 
 /* Each letter gets its own color */
-.l1 { color: #a855f7; }  /* purple */
-.l2 { color: #3b82f6; }  /* blue */
-.l3 { color: #ec4899; }  /* pink */
-.l4 { color: #f59e0b; }  /* yellow */
-.l5 { color: #10b981; }  /* green */
-.l6 { color: #ef4444; }  /* red */
-.l7 { color: #a855f7; }  /* purple */
-
-/* Each letter bounces up on hover */
-.logo:hover .l1 { transform: translateY(-4px); }
-.logo:hover .l2 { transform: translateY(-4px); animation-delay: 0.05s; }
-.logo:hover .l3 { transform: translateY(-4px); animation-delay: 0.1s; }
-.logo:hover .l4 { transform: translateY(-4px); animation-delay: 0.15s; }
-.logo:hover .l5 { transform: translateY(-4px); animation-delay: 0.2s; }
-.logo:hover .l6 { transform: translateY(-4px); animation-delay: 0.25s; }
-.logo:hover .l7 { transform: translateY(-4px); animation-delay: 0.3s; }
+.l1 { color: #ffffff; }
+.l2 { color: #ffffff; }
+.l3 { color: #c084fc; }  /* highlight middle letters */
+.l4 { color: #c084fc; }
+.l5 { color: #ffffff; }
+.l6 { color: #ffffff; }
+.l7 { color: #c084fc; }
 
 
 @media (max-width:768px) {
